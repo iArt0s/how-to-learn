@@ -1,7 +1,4 @@
-a{
-  color: #2f80ed;
-}
-.page {;
+.page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
   /* поэтому выше установлена минимальная ширина страницы */
@@ -32,15 +29,13 @@ a{
 .logo {
   width: 183px;
   height: 32px;
-  margin-left: 64px;
-  margin-top: 30px;
   z-index: 25;
 }
 
 .logo_place_header {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 30px;
+  left: 64px;
 }
 
 .header__title {
@@ -54,18 +49,18 @@ a{
 
 .header__subtitle {
   width: 388px;
-  margin-bottom: 30px;
   margin-left: 64px;
   line-height: 25px;
   font-weight: normal;
   font-size: 18px;
   position: absolute;
-  bottom: 0;
+  bottom: 30px;
   left: 0;
   z-index: 25;
 }
 
 .header__link {
+  color: #2f80ed;
   text-decoration: none;
 }
 
@@ -78,7 +73,7 @@ a{
   position: absolute;
   width: 765px;
   height: 608px;
-  background-image: url(/images/header-image.png);
+  background-image: url(../images/header-image.png);
   background-size: 100%;
   background-repeat: no-repeat;
   bottom: 0;
@@ -90,9 +85,8 @@ a{
   height: 568px;
   width: 568px;
   position: absolute;
-  background-color: blue;
+  background-color: #2f80ed;
   right: 0;
-  bottom: 64;
 }
 .description {
   width: 80%;
@@ -111,6 +105,7 @@ a{
   font-weight: normal;
   text-decoration: none;
   color: #2f80ed;
+  margin-top: 0;
 }
 
 .two-columns__main-text {
@@ -121,6 +116,7 @@ a{
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+  margin-top: 0;
   margin-bottom: 30px;
 }
 
@@ -145,7 +141,7 @@ a{
 .section-subtitle {
   display: block;
   width: 60%;
-  margin: 20px auto;
+  margin: 20px auto 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -155,12 +151,13 @@ a{
 .table {
   display: flex;
   flex-wrap: wrap;
-  margin: 60px auto;
+  margin: 0 auto;
   width: 1100px;
   justify-content: space-between;
 }
 
 .table__cell {
+  margin-top: 60px;
   width: 250px;
   justify-content: space-between;
 }
@@ -169,6 +166,7 @@ a{
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
+  margin: 0;
 }
 
 .table__text {
@@ -181,12 +179,12 @@ a{
 .feynman {
   margin: 100px auto 0;
   position: relative;
-  height: 790px;
+  min-height: 790px;
   z-index: 1;
   background-color: #f2f2f2;
 }
 
-.feynman__img {
+.feynman_img {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -214,6 +212,7 @@ a{
   position: relative;
   z-index: 3;
   text-align: center;
+  margin: 0;
 }
 
 .feynman__link {
@@ -222,9 +221,9 @@ a{
   font-weight: normal;
   position: absolute;
   top: 50%;
-  right: 0;
-  padding-right: 48px;
+  right: 40px;
   text-decoration: none;
+  color: #2f80ed;
 }
 
 .feynman__link::after {
@@ -237,18 +236,19 @@ a{
   margin: 0 auto;
   background-color: #1f1f1f;
   overflow: hidden;
+  z-index: 4;
 }
 
-.section-title__theme_dark {
+.section-title_theme_dark {
   color: white;
   padding-top: 90px;
 }
 
-.section-subtitle__theme_dark {
+.section-subtitle_theme_dark {
   color: white;
 }
 
-.table__theme_dark {
+.table_theme_dark {
   position: relative;
   z-index: 400;
   margin-bottom: 90px;
@@ -263,16 +263,18 @@ a{
 
 .kaufman__triangle {
   position: absolute;
-  background-image: url(/images/kaufman-triangle.svg);
+  background-image: url(../images/kaufman-triangle.svg);
   background-repeat: no-repeat;
+  background-size: 877px 877px;
   width: 877px;
   height: 877px;
   top: 0;
   right: -210px;
-  z-index: 100;
+  z-index: -4;
 }
 
 .footer {
+  box-sizing: border-box;
   padding: 60px 0 40px;
   min-height: 350px;
   background-color: #1f1f1f;;
@@ -280,15 +282,16 @@ a{
 
 .footer__author{
   padding: 18px 0;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
 }
 
 .footer__columns {
   width: 90%;
   display: flex;
-  flex-basis: 711px;
   color: #fff;
   margin: 0 auto;
-  padding: 60px 0 40px;
 }
 
 .footer__column-heading {
@@ -298,12 +301,12 @@ a{
   margin-bottom: 20px;
 }
 
-.column__content-copyright {
-  width: 50%;
+.footer__column_content-copyright {
+  flex-basis: 711px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 350px;
+  min-height: 250px;
 }
 
 .logo_place_footer {
@@ -311,8 +314,8 @@ a{
   background-repeat: no-repeat;
   background-size: contain;
 }
-.column__content-info,
-.column__content-social {
+.footer__column_content-info,
+.footer__column_content-social {
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
@@ -328,13 +331,20 @@ a{
   list-style: none;
 }
 
-.footer__link-item svg {
+.footer__link_img {
   padding-right: 10px;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+
 }
 
 .footer__link {
   color: #fff;
   text-decoration: none;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
 }
 
 
