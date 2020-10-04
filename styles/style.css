@@ -49,13 +49,12 @@
 
 .header__subtitle {
   width: 388px;
-  margin-left: 64px;
   line-height: 25px;
   font-weight: normal;
   font-size: 18px;
   position: absolute;
   bottom: 30px;
-  left: 0;
+  left: 64px;
   z-index: 25;
 }
 
@@ -86,6 +85,7 @@
   width: 568px;
   position: absolute;
   background-color: #2f80ed;
+  top: 64px;
   right: 0;
 }
 .description {
@@ -184,7 +184,7 @@
   background-color: #f2f2f2;
 }
 
-.feynman_img {
+.feynman__image {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -301,7 +301,7 @@
   margin-bottom: 20px;
 }
 
-.footer__column_content-copyright {
+.footer__column_content_copyright {
   flex-basis: 711px;
   display: flex;
   flex-direction: column;
@@ -314,8 +314,8 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
-.footer__column_content-info,
-.footer__column_content-social {
+.footer__column_content_info,
+.footer__column_content_social {
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
@@ -331,7 +331,7 @@
   list-style: none;
 }
 
-.footer__link_img {
+.footer__social-icon {
   padding-right: 10px;
   width: 16px;
   height: 16px;
