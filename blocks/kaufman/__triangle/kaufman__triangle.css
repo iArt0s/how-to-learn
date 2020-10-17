@@ -8,4 +8,6 @@
   top: 0;
   right: -210px;
   z-index: -4;
+  animation:spin 20s linear infinite;
+
 }
