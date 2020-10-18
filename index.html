@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="vendor/normalize.css">
+  <link rel="stylesheet" href="pages/index.css">
   <title>Научиться учиться</title>
 </head>
 
@@ -19,7 +19,7 @@
         <a class="header__link" href="#">Узнать</a>
       </p>
       <div class="header__main-illustration"></div>
-      <div class="header__square-pic"></div>
+      <div class="header__square-pic rotation"></div>
     </header>
     <main class="content">
       <section class="description">
@@ -44,7 +44,7 @@
       </section>
       <section class="techniques">
         <h2 class="section-title">Техники обучения</h2>
-        <span class="section-subtitle">Пять практик от Барбары Оакли</span>
+        <p class="section-subtitle">Пять практик от Барбары Оакли</p>
         <div class="cards">
           <div class="cards__item">
             <img src="./images/cards-attention.png" alt="Картинка карточки" class="cards__image">
@@ -81,9 +81,9 @@
         <h2 class="section-title">Видео на TED</h2>
         <span class="section-subtitle">Для тех, кто любит прокрастинировать</span>
         <div class="video__iframes">
-          <iframe src="https://www.youtube.com/embed/arj7oStGLkU" frameborder="0" allowfullscreen class="video__iframe">
+          <iframe src="https://www.youtube.com/embed/arj7oStGLkU" allowfullscreen class="video__iframe">
           </iframe>
-          <iframe src="https://www.youtube.com/embed/5MgBikgcWnY" frameborder="0" allowfullscreen class="video__iframe">
+          <iframe src="https://www.youtube.com/embed/5MgBikgcWnY" allowfullscreen class="video__iframe">
           </iframe>
         </div>
       </section>
@@ -118,7 +118,7 @@
           <div class="table__cell">
             <h3 class="table__heading">2,1 миллиарда</h3>
             <p class="table__text">Число нуждающихся в повышении квалификации</p>
-            <span class="table__text">Всемирный банк, 2017</span>
+            <p class="table__text">Всемирный банк, 2017</p>
           </div>
           <div class="table__cell">
             <h3 class="table__heading">1000 терабайт</h3>
@@ -131,7 +131,7 @@
           <div class="table__cell">
             <h3 class="table__heading">420 миллионов</h3>
             <p class="table__text">Число взрослых людей моложе 25 лет, не имеющих образования для трудоустройства</p>
-            <span class="table__text">Всемирный банк, 2017</span>
+            <p class="table__text">Всемирный банк, 2017</p>
           </div>
           <div class="table__cell">
             <h3 class="table__heading">17-20 лет</h3>
@@ -149,13 +149,13 @@
       </section>
       <section class="khan">
         <div class="khan__container">
-          <span class="khan__author">Салман Хан</span>
-          <h3 class="khan__title">Весь мир — школа</h3>
+          <p class="khan__author">Салман Хан</p>
+          <h2 class="khan__title">Весь мир — школа</h2>
           <p class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему
             миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду
             смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.</p>
-          <span class="khan__quote-author">Джордж Лукас</span>
-          <span class="khan__quote-author-subline">Кинорежиссер, продюсер</span>
+          <p class="khan__quote-author">Джордж Лукас</p>
+          <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
           <div class="khan__book-container">
             <img src="./images/khan-book.jpg" alt="Картинка книги" class="khan__book-pic">
             <a class="khan__buy-link" href="#">Купить книгу</a>
@@ -207,16 +207,24 @@
             <p class="table__text">Уделяйте внимание количеству и скорости.</p>
           </div>
         </div>
-        <div class="kaufman__triangle"></div>
+        <div class="kaufman__triangle rotation"></div>
       </section>
       <section class="resources">
         <h2 class="section-title">Полезные ресурсы</h2>
         <span class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</span>
         <div class="resources__logo-zone">
-          <img src="./images/resources-arzamas.svg" alt="Картинка логотипа" class="resources__logo">
-          <img src="./images/resources-n1.svg" alt="Картинка логотипа" class="resources__logo">
-          <img src="./images/resources-strelka.svg" alt="Картинка логотипа" class="resources__logo">
-          <img src="./images/resources-polka.svg" alt="Картинка логотипа" class="resources__logo">
+          <a href="#" class="resources__logo">
+            <img src="./images/resources-arzamas.svg" alt="Картинка логотипа">
+          </a>
+          <a href="#" class="resources__logo">
+            <img src="./images/resources-n1.svg" alt="Картинка логотипа">
+          </a>
+          <a href="#" class="resources__logo">
+            <img src="./images/resources-strelka.svg" alt="Картинка логотипа">
+          </a>
+          <a href="#" class="resources__logo">
+            <img src="./images/resources-polka.svg" alt="Картинка логотипа">
+          </a>
         </div>
       </section>
     </main>
